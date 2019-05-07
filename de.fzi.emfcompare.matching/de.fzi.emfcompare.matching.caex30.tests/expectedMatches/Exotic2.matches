@@ -1,0 +1,10 @@
+Compare
+left: "before\\Example1.caex"
+right: "after\\Example1.caex"
+
+Match "" with ""
+Match Tree "Instances" with "_Instances" except {
+	nothing with 0
+	nothing with 1		
+}
+Match Tree "Base Library" with "Base Library"

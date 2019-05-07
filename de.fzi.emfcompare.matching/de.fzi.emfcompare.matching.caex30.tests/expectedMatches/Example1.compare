@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<compare:Comparison xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:compare="http://www.eclipse.org/emf/compare">
+  <matchedResources leftURI="file:before/Example1.caex" rightURI="file:after/Example1.caex"/>
+  <matches>
+    <submatches>
+      <submatches>
+        <differences xsi:type="compare:AttributeChange" kind="CHANGE">
+          <attribute href="http://www.dke.de/CAEX/300#//CAEXObject/name"/>
+        </differences>
+        <left href="../before/Example1.caex#//@instanceHierarchy.0/@internalElement.0"/>
+        <right href="../after/Example1.caex#//@instanceHierarchy.0/@internalElement.0"/>
+      </submatches>
+      <submatches>
+        <left href="../before/Example1.caex#//@instanceHierarchy.0/@internalElement.1"/>
+        <right href="../after/Example1.caex#//@instanceHierarchy.0/@internalElement.1"/>
+      </submatches>
+      <submatches>
+        <right href="../after/Example1.caex#//@instanceHierarchy.0/@description"/>
+      </submatches>
+      <submatches>
+        <right href="../after/Example1.caex#//@instanceHierarchy.0/@additionalInformation.0"/>
+      </submatches>
+      <differences xsi:type="compare:ReferenceChange" kind="DELETE">
+        <reference href="http://www.dke.de/CAEX/300#//CAEXBasicObject/description"/>
+        <value href="../after/Example1.caex#//@instanceHierarchy.0/@description"/>
+      </differences>
+      <differences xsi:type="compare:ReferenceChange" kind="DELETE">
+        <reference href="http://www.dke.de/CAEX/300#//CAEXBasicObject/additionalInformation"/>
+        <value href="../after/Example1.caex#//@instanceHierarchy.0/@additionalInformation.0"/>
+      </differences>
+      <differences xsi:type="compare:AttributeChange" kind="CHANGE">
+        <attribute href="http://www.dke.de/CAEX/300#//CAEXBasicObject/changeMode"/>
+      </differences>
+      <differences xsi:type="compare:AttributeChange" kind="CHANGE">
+        <attribute href="http://www.dke.de/CAEX/300#//CAEXObject/name"/>
+      </differences>
+      <left href="../before/Example1.caex#//@instanceHierarchy.0"/>
+      <right href="../after/Example1.caex#//@instanceHierarchy.0"/>
+    </submatches>
+    <submatches>
+      <submatches>
+        <left href="../before/Example1.caex#//@systemUnitClassLib.0/@systemUnitClass.0"/>
+        <right href="../after/Example1.caex#//@systemUnitClassLib.0/@systemUnitClass.0"/>
+      </submatches>
+      <left href="../before/Example1.caex#//@systemUnitClassLib.0"/>
+      <right href="../after/Example1.caex#//@systemUnitClassLib.0"/>
+    </submatches>
+    <left href="../before/Example1.caex#/"/>
+    <right href="../after/Example1.caex#/"/>
+  </matches>
+</compare:Comparison>

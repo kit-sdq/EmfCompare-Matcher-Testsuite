@@ -1,0 +1,10 @@
+Compare
+
+Match "" with ""
+
+Match Tree 0 with 0 except {
+	nothing with 0
+	nothing with 1
+}
+
+Match Tree "Base Library" with nothing

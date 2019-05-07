@@ -1,0 +1,63 @@
+grammar de.fzi.emfcompare.matching.Matches with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/emf/2002/Ecore" as Ecore
+
+generate matches "http://www.integrate.org/platform/Matches"
+
+Model: {Model}
+	'Compare'
+	('left:' left=STRING
+	'right:' right=STRING
+	)?
+	('using' '{'
+		('delimiter:' defaultDelimiter=STRING)?
+		('defaultIdentifier:' defaultIdentifier=STRING)?
+		'}'
+	)?	
+	matches+=Match*;
+	
+Match:
+	'Match' (MatchElement | MatchTree)
+;
+
+Except:
+	{Except} '{' except+=MatchRelativeElements* '}'
+;
+
+MatchRelativeElements:
+	left=Element 'with' right=Element ('except' except=Except)?
+;
+
+
+MatchTree:
+	'Tree' match=MatchElement ('except' except=Except)?
+;
+
+	
+MatchElement:
+	left=Element 'with' right=Element
+;
+	
+Element:
+	ElementPath | ElementID | ElementPosition | ElementURI | {NoElement} nothing
+;
+
+ElementPosition:
+	{ElementPosition} position=INT
+;
+
+ElementPath:
+	{ElementPath} path=STRING
+;
+
+ElementID:
+	{ElementID}'uuid='uuid=STRING
+;
+
+ElementURI:
+	{ElementURI}'uri='uri=STRING;
+
+
+fragment nothing:
+	'nothing'
+;

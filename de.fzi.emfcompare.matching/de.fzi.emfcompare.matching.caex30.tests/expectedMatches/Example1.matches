@@ -1,0 +1,19 @@
+Compare
+
+/* Example 1
+ * ================
+ * 
+ * Match all Elements separately by position, without left, right specification
+ */
+
+Match Tree "" with "" except {
+	0 with 0 except {
+		nothing with 0
+		nothing with 1
+		0 with 2
+		1 with 3
+	}
+	1 with 1 except {
+		0 with 0
+	}
+}

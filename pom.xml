@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>de.fzi.emfcompare</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>releng/de.fzi.emfcompare.parent</relativePath>
+	</parent>
+	<artifactId>de.fzi.emfcompare</artifactId>
+	<name>EMFCompare Matching</name>
+	<packaging>pom</packaging>
+	
+	<repositories>
+		<repository>
+			<id>Vitruv Domains</id>
+			<layout>p2</layout>
+			<url>http://vitruv.tools/updatesite/nightly/domains</url>
+		</repository>
+		<repository>
+			<id>EMFCompare</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/modeling/emf/compare/updates/nightly/latest</url>
+		</repository>
+	</repositories>
+
+	<modules>
+		<module>de.fzi.emfcompare.matching</module>
+		<module>features</module>
+	</modules>
+
+
+	<dependencies>
+	<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.8.0-beta4</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.8.0-beta4</version>
+    <scope>test</scope>
+</dependency>
+		<!--<dependency> 
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-log4j12</artifactId>
+		  <version>1.8.0-beta4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.8.0-beta4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.8.0-beta4</version>
+		</dependency>
+		-->
+	</dependencies>
+
+</project>

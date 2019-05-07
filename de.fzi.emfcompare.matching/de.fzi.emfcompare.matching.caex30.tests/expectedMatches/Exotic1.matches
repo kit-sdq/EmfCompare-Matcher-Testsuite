@@ -1,0 +1,24 @@
+Compare 
+left: "before\\Simple1.caex"
+right: "after\\Simple1.caex"
+
+using {
+	delimiter: "/"
+	defaultIdentifier: "name"
+}
+
+/* Exotic Example 1
+ * ================
+ * 
+ * Match Tree matches relative names and positions
+ */
+
+Match Tree "IntLib" with "IntLibrary" except {
+ "../" with "/../"
+ "/IntLib/IntClass1" with "/IntLibrary/IntClass1"
+ "/IntLib/IntClass2" with "/IntLibrary/IntClass2"
+ "/IntLib/IntClass1/Attrib1" with "/IntLibrary/IntClass2/Attrib1"
+ "/ClassLib" with "/ClassLib"
+ "/ClassLib/S_ucl_1" with "/ClassLib/S_ucl_1"
+ "/@iD=654321/@iD=123456" with nothing
+}

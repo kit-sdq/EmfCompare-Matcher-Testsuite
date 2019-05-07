@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipients:Recipients xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:recipients="edu.kit.ipd.sdq.metamodels.recipients" id="_j5Dv4ETpEeme_u7ZfQHn5Q">
+  <recipients id="_Recp1" business="true">
+    <locatedAt id="_nEiNYETpEeme_u7ZfQHn5Q" number="44" street="X"/>
+  </recipients>
+  <recipients id="_Recp2">
+    <locatedAt id="_p9Pf4ETpEeme_u7ZfQHn5Q" number="12" street="Y"/>
+  </recipients>
+</recipients:Recipients>

@@ -1,0 +1,26 @@
+# Eclipse/Java
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.class
+
+# Xtext
+src-gen/
+**/model/generated/
+.antlr-generator-*-patch.jar
+
+# EMF
+model-gen/
+
+# Xtend
+xtend-gen/
+*._trace
+*.xtendbin
+*.xml_gen
+
+# Maven
+target/
+.polyglot.build.properties

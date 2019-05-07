@@ -1,0 +1,30 @@
+Compare 
+left: "before\\Simple1.caex"
+right: "after\\Simple1.caex"
+
+using {
+	delimiter: "/"
+	defaultIdentifier: "name"
+}
+
+/* Simple Example 3
+ * ================
+ * 
+ * Match Tree matches relative names and positions
+ */
+
+Match "" with ""
+Match Tree "IntLib" with "IntLibrary" except {
+	1 with 0 except {
+		"../IntClass2/../IntClass1/Attrib1" with 0
+	}
+/* 	This assumes the same matches as in Simple Example 2.
+ *  It's again not necessary to specify 0 matching with 1.
+ *  Also Attrib1 is only matched once*/
+}
+Match Tree "ClassLib" with "ClassLib" except {
+	// Paths starting with a delimiter are resolved from the root
+	"/@iD=654321/@iD=123456" with nothing
+	// './path' and 'path' are redundant and matched as relative paths
+	"S_ucl_1" with "S_ucl_1"
+}

@@ -1,0 +1,7 @@
+Compare
+left: "before\\UuidExample.recipients"
+right: "after\\UuidExample.recipients"
+
+Match "" with uuid="_j5Dv4ETpEeme_u7ZfQHn5Q"
+Match Tree uuid="_Recp1" with uuid="_Recp1"
+Match Tree uuid="_Recp2" with uuid="_Recp2"

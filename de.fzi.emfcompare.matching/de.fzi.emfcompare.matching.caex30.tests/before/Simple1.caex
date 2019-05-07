@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:caex="http://www.dke.de/CAEX/300"
+    fileName="Simple1"
+    schemaVersion="3.00">
+  <interfaceClassLib
+      name="IntLib">
+    <interfaceClass
+        name="IntClass1">
+      <attribute
+          name="Attrib1"/>
+    </interfaceClass>
+    <interfaceClass
+        name="IntClass2"/>
+  </interfaceClassLib>
+  <systemUnitClassLib
+      iD="654321"
+      name="ClassLib">
+    <systemUnitClass
+        name="S_ucl_1"/>
+    <systemUnitClass
+        iD="123456"
+        name="S_ucl_2"/>
+  </systemUnitClassLib>
+</caex:CAEXFile>

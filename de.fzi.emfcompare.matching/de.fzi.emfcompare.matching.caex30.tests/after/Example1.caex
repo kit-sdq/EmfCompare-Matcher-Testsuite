@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:caex="http://www.dke.de/CAEX/300" fileName="Mechanic Screwdriver">
+  <instanceHierarchy changeMode="create" name="_Instances">
+    <description value="Description"/>
+    <additionalInformation name="value" value="1"/>
+    <internalElement name="_Handle"/>
+    <internalElement name="Driver"/>
+  </instanceHierarchy>
+  <systemUnitClassLib name="Base Library">
+    <systemUnitClass name="Base Screw"/>
+  </systemUnitClassLib>
+</caex:CAEXFile>

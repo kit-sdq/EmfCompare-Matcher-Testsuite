@@ -1,0 +1,24 @@
+Compare 
+left: "before\\Simple1.caex"
+right: "after\\Simple1.caex"
+
+using {
+	delimiter: "/"
+	defaultIdentifier: "name"
+}
+
+/* Simple Example 1
+ * ================
+ * 
+ * Match all Elements separately
+ */
+
+Match "" with ""
+Match "IntLib" with "IntLibrary"
+Match "IntLib/IntClass1" with "IntLibrary/IntClass1"
+Match "IntLib/IntClass2" with "IntLibrary/IntClass2"
+Match "IntLib/IntClass1/Attrib1" with "IntLibrary/IntClass2/Attrib1"
+
+Match "ClassLib" with "ClassLib"
+Match "ClassLib/S_ucl_1" with "ClassLib/S_ucl_1"
+Match "@iD=654321/@iD=123456" with nothing
